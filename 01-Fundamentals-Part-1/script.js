@@ -82,3 +82,123 @@ console.log(discountCode, typeof discountCode); // object
 let specialOffer;
 // let specialOffer = undefined
 console.log(specialOffer, typeof specialOffer); // undefined
+
+// ------- ** Operators
+
+// --- Operator performs some operation on single or multiple operands (data value) and produces a rusult.
+
+// ----- • Arithmetic Operators
+
+// 1. Addition (+)
+
+const accountBalance = 1500;
+const depositAmount = 500;
+
+const newBalance = accountBalance + depositAmount;
+console.log(`$${newBalance}`); // $2000
+
+// 2. Subtraction (-)
+
+const withdrawalAmount = 750;
+
+const remainingBalance = newBalance - withdrawalAmount;
+console.log(`$${remainingBalance}`); // $1250
+
+// 3. Multiplication (*)
+
+const principalAmount = 10000;
+const annualInterestRate = 0.05; // Annual interest rate (5%)
+
+const interestEarned = principalAmount * annualInterestRate; // Interest earned in one year
+console.log(`$${interestEarned}`); //  $500
+
+// 4. Division (/)
+
+const loanAmount = 1200;
+const numberOfMonths = 24;
+
+const monthlyPayment = loanAmount / numberOfMonths;
+console.log(`$${monthlyPayment.toFixed(2)}`); // $50.00
+
+// 5. Modulus (%)
+
+const remainder = loanAmount % numberOfMonths; // Any remaining amount
+console.log(`Remainder: ${remainder}`); // Remainder: 0
+
+// 6. Increment (++) and Decrement (--) Operator
+
+let cartQuantity = 1;
+
+// Increment (++)
+cartQuantity++; // Increment quantity by 1
+console.log(`Quantity after adding an item: ${cartQuantity}`); // 2
+
+// Decrement (--)
+cartQuantity--; // Decrement quantity by 1
+console.log(`Quantity after removing an item: ${cartQuantity}`); // 1
+
+// ----- • Comparison Operators
+
+// 1. Equal to (==)
+
+const balance1 = 1500;
+const balance2 = '1500'; // String type
+
+const isEqual = balance1 == balance2; // Compares with type coercion
+console.log(`Balances are equal: ${isEqual}`); // true
+
+// 2. Strict Equality (===)
+
+const enteredCode = 12345;
+const expectedCode = '12345'; // String type
+
+const isStrictlyEqual = enteredCode === expectedCode; // Strict comparison
+console.log(`Payment code matches: ${isStrictlyEqual}`); // false
+
+// 3. Not Equal to (!=)
+
+const currentBalance = 800;
+const minimumRequiredBalance = 1000;
+
+const isNotEqual = currentBalance != minimumRequiredBalance;
+console.log(`Balance is not equal to the required minimum: ${isNotEqual}`); // true
+
+// 4. Strict Not Equal to (!==)
+
+const accountNumber = 123456;
+const inputAccountNumber = '123456'; // String type
+
+const isNotStrictlyEqual = accountNumber !== inputAccountNumber; // Strict comparison
+console.log(`Account number matches: ${isNotStrictlyEqual}`); // true
+
+// 5. Greater Than (>)
+
+// const accountBalance = 1500;
+const threshold = 1000;
+
+const exceedsThreshold = accountBalance > threshold;
+console.log(`Balance exceeds threshold: ${exceedsThreshold}`); // true
+
+// 6. Greater Than or Equal To (>=)
+
+// const accountBalance = 1500;
+const minimumBalance = 1500;
+
+const meetsMinimum = accountBalance >= minimumBalance;
+console.log(`Balance meets or exceeds minimum: ${meetsMinimum}`); // true
+
+// 7. Less Than (<)
+
+const account_Balance1 = 500;
+const withdrawal_Amount = 600;
+
+const isLessThanAvailable = account_Balance1 < withdrawal_Amount;
+console.log(`Insufficient funds for withdrawal: ${isLessThanAvailable}`); // true
+
+// 8. Less Than or Equal To (<=)
+
+const account_Balance2 = 900;
+const maximumLimit = 1000;
+
+const belowOrEqual = account_Balance2 <= maximumLimit;
+console.log(`Balance is below or equal to the maximum limit: ${belowOrEqual}`); // true
